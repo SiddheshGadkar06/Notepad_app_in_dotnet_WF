@@ -17,6 +17,14 @@ namespace Notepad_app
         public Form1()
         {
             InitializeComponent();
+            cutToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.X;
+            copyToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.C;
+            pasteToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.V;
+            selectAllToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.A;
+            undoToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Z;
+            saveToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.S;
+            newToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.N;
+
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,6 +115,8 @@ namespace Notepad_app
         {
             textBox1.SelectAll();
         }
+
+
 
     }
 }
